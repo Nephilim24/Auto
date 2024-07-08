@@ -444,7 +444,10 @@ h1 {
   background: #f2f2f2;
 }
 
-.main__offer-inner {}
+.offer__inner {
+  width: 100%;
+  padding-bottom: 128px;
+}
 
 .offer__text {}
 
@@ -463,18 +466,18 @@ h1 {
   margin-bottom: 64px;
 }
 
-.offer__grid {
-  margin-bottom: 32px;
-}
+.offer__grid {}
 
 .offer__grid-list {
+  margin-bottom: 32px;
   display: grid;
+  justify-content: center;
   grid-template: repeat(2, auto) / repeat(4, auto);
   gap: 8px;
 }
 
 .offer__list-item {
-  width: 316px;
+  width: 314px;
   height: 232px;
   text-align: center;
   background-color: #fff;
@@ -547,11 +550,8 @@ h1 {
 }
 
 .arrow__link-btn {
-  display: inline-block;
-  margin-left: 1040px;
-  text-align: right;
-  padding-right: 68px;
-  margin-bottom: 128px;
+  display: flex;
+  justify-content: end;
   font-size: 18px;
   transition: all .3s;
   white-space: nowrap;
@@ -563,7 +563,7 @@ h1 {
 
 .arrow__link-btn svg {
   padding-left: 16px;
-  transform: translateY(15%);
+  transform: translateY(50%);
 }
 
 .arrow__link-btn path {
@@ -1271,10 +1271,40 @@ h1 {
 /*=============================================== MEDIA ===============================================*/
 /*=============================================== MEDIA ===============================================*/
 /*=============================================== 1300 ===============================================*/
-.header__body-inner {
-  padding: 20px;
-}
+@media (max-width: 1300px) {
+  .header__body-inner {
+    padding: 20px;
+  }
 
+  /*=============================================== OFFER ===============================================*/
+  /*=============================================== OFFER ===============================================*/
+
+  .offer__subtitle {
+    font-size: 20px;
+  }
+
+  .offer__title {
+    font-size: 48px;
+    max-width: 700px;
+  }
+
+  .offer__list-item {
+    width: 264px;
+    height: 182px;
+  }
+
+  .offer__list-item svg {
+    margin-top: 55px;
+  }
+
+  .grid__item-text {
+    font-size: 20px;
+  }
+
+  .arrow__link-btn {
+    font-size: 16px;
+  }
+}
 
 /*=============================================== 1200 ===============================================*/
 @media (max-width: 1200px) {
@@ -1327,6 +1357,7 @@ h1 {
     width: 26px;
     height: 26px;
   }
+
 }
 
 /*=============================================== 1100 ===============================================*/
@@ -1453,6 +1484,11 @@ h1 {
     padding-left: 15px;
   }
 
+  /*=============================================== OFFER ===============================================*/
+  /*=============================================== OFFER ===============================================*/
+  .offer__grid-list {
+    grid-template: repeat(3, auto) / repeat(3, auto);
+  }
 }
 
 /*=============================================== 980 ===============================================*/
@@ -1495,7 +1531,81 @@ h1 {
   }
 }
 
-/*=============================================== 450 ===============================================*/
+/*=============================================== 825 ===============================================*/
+@media (max-width: 825px) {
+
+  /*=============================================== OFFER ===============================================*/
+  /*=============================================== OFFER ===============================================*/
+  .offer__title {
+    font-size: 44px;
+  }
+
+  .offer__list-item {
+    width: 214px;
+    height: 132px;
+  }
+
+  .offer__list-item svg {
+    margin-top: 30px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .grid__item-text {
+    font-size: 18px;
+  }
+
+  .arrow__link-btn {
+    font-size: 14px;
+  }
+}
+
+/*=============================================== 680 ===============================================*/
+@media (max-width: 680px) {
+
+  /*=============================================== OFFER ===============================================*/
+  /*=============================================== OFFER ===============================================*/
+  .offer__title {
+    font-size: 40px;
+  }
+
+  .offer__grid-list {
+    grid-template: repeat(2, auto) / repeat(2, auto);
+  }
+
+  .offer__list-item {
+    width: 184px;
+    height: 102px;
+  }
+
+  .offer__list-item svg {
+    margin: 20px 0 0 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .grid__item-text {
+    font-size: 16px;
+  }
+
+  .arrow__link-btn {
+    font-size: 14px;
+  }
+}
+
+/*=============================================== 505 ===============================================*/
+@media (max-width: 505px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header__body-text .header__body-rate {
+    top: 190px;
+    left: -30px;
+  }
+}
+
+/*=============================================== 400 ===============================================*/
 @media (max-width: 400px) {
   .header__top {
     min-width: none;
@@ -1520,5 +1630,15 @@ h1 {
 
   .header__button {
     margin: 0 0 30px 0;
+  }
+
+  /*=============================================== OFFER ===============================================*/
+  /*=============================================== OFFER ===============================================*/
+  .offer__subtitle {
+    font-size: 16px;
+  }
+
+  .offer__title {
+    font-size: 35px;
   }
 }
