@@ -615,6 +615,10 @@ h1 {
   flex-direction: column;
 }
 
+.process__steps .process__content-buttons {
+  display: none;
+}
+
 .process__step-item {
   display: flex;
   margin-bottom: 16px;
@@ -1304,6 +1308,32 @@ h1 {
   .arrow__link-btn {
     font-size: 16px;
   }
+
+  /*=============================================== PROCESS ===============================================*/
+  /*=============================================== PROCESS ===============================================*/
+  .process__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .process__title {
+    font-size: 48px;
+  }
+
+  .process__step-title {
+    font-size: 28px;
+  }
+
+  .step__icon img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .dash::after {
+    top: 85px;
+    left: 31px;
+    height: 61px;
+  }
 }
 
 /*=============================================== 1200 ===============================================*/
@@ -1489,6 +1519,13 @@ h1 {
   .offer__grid-list {
     grid-template: repeat(3, auto) / repeat(3, auto);
   }
+
+  /*=============================================== PROCESS ===============================================*/
+  /*=============================================== PROCESS ===============================================*/
+
+  .process__content {
+    max-width: 450px;
+  }
 }
 
 /*=============================================== 980 ===============================================*/
@@ -1529,6 +1566,38 @@ h1 {
   .header__body-rate:hover {
     box-shadow: 0 0 0 12px #e1e1e16e;
   }
+
+  /*=============================================== PROCESS ===============================================*/
+  /*=============================================== PROCESS  ===============================================*/
+  .process__content {
+    max-width: 380px;
+    margin-right: 15px;
+  }
+
+  .process__title {
+    font-size: 40px;
+  }
+
+  .process__description {
+    max-width: 360px;
+  }
+
+  .process__step-title {
+    font-size: 24px;
+  }
+
+  .process__description {
+    font-size: 14px;
+  }
+
+  .dash::after {
+    top: 75px;
+    height: 51px;
+  }
+
+  .process__step-description {
+    font-size: 16px;
+  }
 }
 
 /*=============================================== 825 ===============================================*/
@@ -1557,6 +1626,43 @@ h1 {
 
   .arrow__link-btn {
     font-size: 14px;
+  }
+
+  /*=============================================== PROCESS ===============================================*/
+  /*=============================================== PROCESS  ===============================================*/
+  .process__inner {
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .process__content {
+    display: none;
+  }
+
+  .process__step-title {
+    font-size: 32px;
+  }
+
+  .process__step-description {
+    font-size: 18px;
+  }
+
+  .step__icon img {
+    width: 72px;
+    height: 80px;
+  }
+
+  .dash::after {
+    top: 90px;
+    left: 36px;
+    height: 71px;
+  }
+  .process__steps .process__content-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .process__step-item:nth-child(3) {
+    margin-bottom: 50px;
   }
 }
 

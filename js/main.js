@@ -63,7 +63,7 @@ $(function () {
     }
   })
 
-  $(".header__nav-list a, .header__button, .about__button, .footer__logo, .footer__nav-list a").on('click', function (e) {
+  $(".header__nav-list a, .header__button, .process__button, .about__button, .footer__logo, .footer__nav-list a").on('click', function (e) {
     e.preventDefault()
     var id = $(this).attr('href'),
       top = $(id).offset().top
